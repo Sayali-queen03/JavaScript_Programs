@@ -93,6 +93,34 @@ let num4="123";
 console.log(num3===num4);
 console.log(num3!==num4);
 
+// Control Structure
+ // 1) If
+ let age=18;
+ if(age>=18){
+    console.log("You can Vote");
+ }
+
+ // 2) If-else
+ let age1=8;
+ if(age1>=18){
+    console.log("You can Vote");
+ }else{
+    console.log("You can't Vote");
+}
+
+// 3) Else if
+let score = 85;
+if (score <= 50) {
+    console.log("Grade: C");
+} else if (score >= 51 && score <=80) {
+    console.log("Grade: B");
+} else if(score >= 81 && score <=90){
+    console.log("Grade: A");
+} else {
+    console.log("Grade : A+");
+    
+}
+
 
 
 
