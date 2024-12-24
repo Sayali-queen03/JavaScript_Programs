@@ -140,3 +140,25 @@ for (let i = 1; i <= num; i++) {
     factorial *= i;
 }
 console.log("Factorial of " + num + ": " + factorial);
+
+
+// count number
+let countnum=12345;
+count=0;
+while(countnum>0){
+    countnum=Math.floor(countnum/10)
+    count++;
+}
+console.log(count)
+
+
+// fibonacci series
+let a=0 , b=1;
+for(i=1;i<=10;i++)
+{
+    next=a+b;
+    a=b;
+    b=next;
+    console.log(next);
+    
+}
