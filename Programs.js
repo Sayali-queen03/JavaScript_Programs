@@ -162,3 +162,126 @@ for(i=1;i<=10;i++)
     console.log(next);
     
 }
+
+// Multiplication Table of a Number
+console.log("\n7. Print Multiplication Table of a Number:");
+let tableNum = 5;
+for (let i = 1; i <= 10; i++) {
+    console.log(tableNum + " x " + i + " = " + (tableNum * i));
+}
+
+//  Reverse a Number
+console.log("Reverse a Number:");
+let originalNum = 12345;
+let reversedNum = 0;
+while (originalNum > 0) {
+    let digit = originalNum % 10;
+    reversedNum = (reversedNum * 10) + digit;
+    originalNum = Math.floor(originalNum / 10);
+}
+console.log("Reversed Number: " + reversedNum);
+
+
+
+// Function to calculate the area of a rectangle
+function calculateArea(length, width) {
+  
+    let area = length * width;
+    return area; 
+}
+let area = calculateArea(5, 3);
+console.log("The area of the rectangle is:", area);
+
+
+// Function to check if a number is even or odd
+function isEven(number) {
+    if (number % 2 === 0) {
+        return "Even"; 
+    } else {
+        return "Odd";
+    }
+}
+console.log(isEven(4));
+console.log(isEven(7)); 
+
+
+// Function to find the largest number
+function findLargest(a, b, c) {
+    let largest = Math.max(a, b, c);
+    return largest;
+}
+console.log(findLargest(4, 9, 2));
+
+
+// Function to convert Celsius to Fahrenheit
+function celsiusToFahrenheit(celsius) {
+        let fahrenheit = (celsius * 9/5) + 32;
+    return fahrenheit;
+}
+console.log(celsiusToFahrenheit(0)); 
+console.log(celsiusToFahrenheit(25));
+
+
+// Function to calculate the total price of items in a shopping cart
+function calculateTotal(prices) {
+    let total = 0; 
+    for (let price of prices) {
+        total += price; 
+    }
+    return total;
+}
+console.log(calculateTotal([10, 20, 30]));
+
+
+
+// Function to count vowels in a string
+function countVowels(input) {
+    let vowels = "aeiouAEIOU";
+    let count = 0; 
+    for (let char of input) {
+        if (vowels.includes(char)) {
+            count++; 
+        }
+    }
+    return count;
+}
+console.log(countVowels("hello")); 
+console.log(countVowels("programming")); 
+
+
+// Function to validate a password
+function validatePassword(password) {
+    if (password.length >= 8 && /\d/.test(password)) {
+        return "Valid"; 
+    } else {
+        return "Invalid"; 
+    }
+}
+console.log(validatePassword("Pass123")); 
+console.log(validatePassword("Pass1234")); 
+
+
+
+// Function to perform a calculation
+function calculator(a, b, operator) {
+    switch (operator) {
+        case '+': return a + b;
+        case '-': return a - b;
+        case '*': return a * b;
+        case '/': return a / b;
+        default: return "Invalid operator";
+    }
+}
+console.log(calculator(5, 3, '+')); 
+console.log(calculator(10, 2, '/')); 
+
+
+
+ 
+// Function to check if a string is a palindrome
+function isPalindrome(input) {
+    let reversed = input.split('').reverse().join(''); 
+    return input.toLowerCase() === reversed.toLowerCase(); 
+}
+console.log(isPalindrome("madam")); 
+console.log(isPalindrome("hello")); 

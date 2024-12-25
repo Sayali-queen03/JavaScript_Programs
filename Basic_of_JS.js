@@ -121,6 +121,56 @@ if (score <= 50) {
     
 }
 
+// Function
+function greet() {
+    console.log("Hello, welcome to the JavaScript course!");
+}
+greet();
+
+
+function greetUser(name) {
+    console.log("Hello, " + name + "!");
+}
+greetUser("Sayali");
+
+
+
+function add(a, b) {
+    return a + b; 
+}
+let result = add(5, 10);  // Calls the function and stores the result in `result`
+console.log(result);   
+
+
+const sayGoodbye = function() {
+    console.log("Goodbye!");
+};
+sayGoodbye(); 
+
+
+// Example of an arrow function:
+const multiply = (a, b) => a * b; 
+console.log(multiply(4, 5));  
+
+
+// Example of function scope:
+let globalVar = "I am global";
+function checkScope() {
+    let localVar = "I am local";
+    console.log(globalVar);  // Accessible here (global scope)
+    console.log(localVar);   // Accessible here (local scope)
+}
+
+
+
+// Array 
+
+let arr=[1,2,3,"Sayali",undefined,true]
+console.log(arr);
+
+
+
+
 
 
 
